@@ -1,5 +1,4 @@
-import { takeEvery } from 'redux-saga';
-import { spawn, call, put } from 'redux-saga/effects';
+import { spawn, call, put, takeEvery } from 'redux-saga/effects';
 import { FETCH_USERS, createFetchUsersSuccess } from './actions';
 
 const promiseFetch = (resolve) => {
