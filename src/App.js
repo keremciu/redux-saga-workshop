@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MoviesContainer from './Users/Container';
+import Users from './Users/Container';
 import logo from './logo.svg';
 import './App.css';
 
@@ -10,7 +10,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
         </header>
-        <MoviesContainer />
+        <Users/>
       </div>
     );
   }
