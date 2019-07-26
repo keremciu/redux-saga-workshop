@@ -19,7 +19,7 @@ class UsersContainer extends PureComponent {
         </button>
         <ul>
           {this.props.users.data.map(user => {
-            return <li>{user.gender} {user.name.first}</li>
+            return <li key={user.email}> {user.gender} - {user.name.first}</li>
           })}
         </ul>
       </div>
@@ -28,7 +28,7 @@ class UsersContainer extends PureComponent {
 }
 
 UsersContainer.propTypes = {
-  users: PropTypes.array,
+  users: PropTypes.object,
 }
 
 function mapStateToProps(state, props) {
